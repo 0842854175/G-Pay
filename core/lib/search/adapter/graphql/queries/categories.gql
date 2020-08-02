@@ -1,0 +1,19 @@
+query CategoryList (
+    $filter: CategoryFilterInput,
+    $pageSize: Int,
+    $currentPage: Int,
+    $sort: CategorySortInput,
+    $_sourceIncludes: [String]
+  ) {
+  categories(
+    filter: $filter
+    pageSize: $pageSize
+    currentPage: $currentPage
+    sort: $sort
+    _sourceIncludes: $_sourceIncludes
+  )
+  {
+    hits
+    suggest
+  }
+}

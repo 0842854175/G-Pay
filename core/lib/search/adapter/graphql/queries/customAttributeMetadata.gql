@@ -1,0 +1,9 @@
+query customAttributeMetadata ($attributes: AttributeInput!, $_sourceIncludes: [String]) {
+  customAttributeMetadata(
+    attributes: $attributes
+    _sourceIncludes: $_sourceIncludes
+  )
+  {
+    hits
+  }
+}
