@@ -1,0 +1,22 @@
+{
+  "name": "@vue-storefront/boilerplate-api",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@vue-storefront/factories": "^0.0.1"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
